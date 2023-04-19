@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MilenaJava</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+    <script>
+     
+      function cubo(){
+    var numero=prompt("Digite um número");
+    var cubo= numero*numero*numero;
+    
+    window.alert("O cubo do número é " + cubo);
+   
+      }
+    </script>
+
+    <script>
+      
+      function conversão(){
+        var numero=prompt("Digite a temperatura em F°");
+        var convert1= numero - 32;
+        var convert2= convert1 * 5/9;
+
+        window.alert("A temperatura em C° é " + convert2);  
+      }
+    </script>
+
+<script>
+    
+    function triangulo(){
+      var numero1=prompt("Digite a base do triângulo");
+      var numero2=prompt("Digite a altura do triângulo");
+      var multarea= numero1*numero2;
+      var divarea= multarea /2;
+      
+
+      window.alert("A área do triângulo é " + divarea);  
+    }
+  </script>
+
+<script>
+    
+    function circulo(){
+      var numero=prompt("Coloque o valor do raio");
+      var pi=3.14;
+      var area= numero*numero* pi;
+      var perimetro= 2*numero*pi;
+      window.alert("A área do circulo é " + area + " e o perimetro é " + perimetro );  
+
+    }
+  </script>
+
+<script>
+    
+    function desconto(){
+      var numero=prompt("Insira um valor");
+      var porcentagem= numero * 5/100;
+      var desconto= numero - porcentagem;
+
+      
+
+      window.alert("O desconto é de " + porcentagem + " reais, o valor total fica R$" + desconto);  
+    }
+  </script>
+
+<script>
+    
+    function idade(){
+      var numero=prompt("Insira o ano de nascimento");
+      var nascimento= 2023-numero;
+      if (nascimento < 18){
+        menor = window.alert("Você é menor de idade!");
+      } else {
+        maior = window.alert("Você é maior de idade!");
+      }
+    
+    }
+  </script>
+
+<script>
+    
+    function combustivel(){
+      var numero=prompt("Quanto dinheiro você possui?");
+      var combustivel= numero/5;
+      var quilometro= combustivel*20
+
+      window.alert("Você pode pagar por " + combustivel + " litros de combustível e andar " + quilometro + " Km!")
+      
+    }
+  </script>
+    
+<body>
+
+    <header>
+
+        <h1> MB </h1>
+        
+        </header>
+        
+    <div class="botoes">
+    <button id="button1" onclick="cubo()">Cubo</button>
+
+    <button id="button2" onclick="conversão()">Conversão</button>
+
+    <button id="button3" onclick="triangulo()">Triângulo</button>
+    
+    <button id="button4" onclick="circulo()">Círculo</button>
+
+    <button id="button5" onclick="desconto()">Desconto</button>
+
+    <button id="button6" onclick="idade()">Idade</button>
+
+    <button id="button7" onclick="combustivel()">Combustível</button>
+    </div>
+
+</body>
+
+
+</html>
